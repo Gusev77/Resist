@@ -1,0 +1,161 @@
+object Form1: TForm1
+  Left = 292
+  Height = 582
+  Top = 168
+  Width = 835
+  Caption = 'Form1'
+  ClientHeight = 582
+  ClientWidth = 835
+  Color = 49601
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.0.2.0'
+  object Label1: TLabel
+    Left = 235
+    Height = 20
+    Top = 45
+    Width = 303
+    Caption = 'Расчёт сопротивлений электрической цепи'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 85
+    Height = 20
+    Top = 105
+    Width = 116
+    Caption = 'Введите данные:'
+    ParentColor = False
+    OnClick = Label2Click
+  end
+  object Edit1: TEdit
+    Left = 320
+    Height = 28
+    Top = 100
+    Width = 100
+    OnChange = Edit1Change
+    TabOrder = 0
+  end
+  object Label3: TLabel
+    Left = 238
+    Height = 20
+    Top = 105
+    Width = 17
+    Caption = 'R1'
+    ParentColor = False
+    OnClick = Label3Click
+  end
+  object Label4: TLabel
+    Left = 238
+    Height = 20
+    Top = 155
+    Width = 17
+    Caption = 'R2'
+    ParentColor = False
+    OnClick = Label4Click
+  end
+  object Label5: TLabel
+    Left = 238
+    Height = 20
+    Top = 210
+    Width = 17
+    Caption = 'R3'
+    ParentColor = False
+    OnClick = Label4Click
+  end
+  object Edit2: TEdit
+    Left = 320
+    Height = 28
+    Top = 155
+    Width = 100
+    OnChange = Edit1Change
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 320
+    Height = 28
+    Top = 210
+    Width = 100
+    OnChange = Edit1Change
+    TabOrder = 2
+  end
+  object RadioButton1: TRadioButton
+    Left = 585
+    Height = 24
+    Top = 155
+    Width = 159
+    Caption = 'Последовательный'
+    OnChange = RadioButton1Change
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+  end
+  object RadioButton2: TRadioButton
+    Left = 585
+    Height = 24
+    Top = 185
+    Width = 129
+    Caption = 'Параллельный'
+    OnChange = RadioButton1Change
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+  end
+  object RadioButton3: TRadioButton
+    Left = 585
+    Height = 24
+    Top = 220
+    Width = 110
+    Caption = 'Смешанный'
+    OnChange = RadioButton1Change
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+  end
+  object Label6: TLabel
+    Left = 580
+    Height = 20
+    Top = 110
+    Width = 189
+    Caption = 'Выберите тип соединения '
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 525
+    Height = 72
+    Top = 365
+    Width = 292
+    Caption = 'ВЫЧИСЛИТЬ'
+    Color = clOlive
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+  object Button2: TButton
+    Left = 585
+    Height = 65
+    Top = 450
+    Width = 179
+    Caption = 'Очистить'
+    OnClick = Button2Click
+    TabOrder = 7
+  end
+  object Memo1: TMemo
+    Left = 90
+    Height = 45
+    Top = 415
+    Width = 275
+    Align = alCustom
+    OnChange = Memo1Change
+    TabOrder = 8
+  end
+  object Edit4: TEdit
+    Left = 126
+    Height = 28
+    Top = 375
+    Width = 174
+    Color = clNone
+    TabOrder = 9
+    Text = 'Результаты вычислений'
+  end
+end
